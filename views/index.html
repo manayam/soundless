@@ -16,6 +16,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+        <!--  charts from chart.js with references from http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/#6-doughnut-chart-->
+        <script src="js/index.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
         
     </head>
 
@@ -33,13 +39,64 @@
 <a href="setting.html"><img alt="cogs" src="images/cogs.jpg" padding-left="40px" width="28" height="28"></a>
 </div>
 
-<span id="header1" style="font-size:25px;" onclick="openNav()"> &nbsp;&nbsp;&#9776;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soundless</span>
-
+<span id="header1" style="font-size:25px;" text-align="center"; onclick="openNav()"> &nbsp;&nbsp;&#9776;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soundless</span>
 
 </div>
 </div>
+</br>
 
-<script src="js/index.js"></script>
+<canvas id="doughnut-chart" width="20" height="20"></canvas></br></br></br>
+<canvas id="line-chart" width="20" height="15"></canvas>
+
+<script>
+Chart.defaults.global.defaultFontColor = 'white';
+Chart.defaults.global.defaultFontSize = 14; 
+Chart.defaults.global.defaultFontStyle = 'normal'; 
+    
+new Chart(document.getElementById("doughnut-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["loud", "medium", "normal"],
+      datasets: [
+        {
+          label: "Total Noise Level",
+          backgroundColor: ["#DE3C18", "#145DC1","#14C136"],
+          data: [25,25,50]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+      }
+    }
+});
+ 
+    new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: [20,40,60,80,100,120,140,160,180,200],
+      datasets: [{
+          label: "Hearing Level",
+          borderColor: '#ECA63E' ,
+          data: [0,23,45,35,20,60,40,50,40,100,122,30,147],
+          fill: false
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+          text: "Noise level throughout the day"
+      }
+    }
+});
+
+    
+</script>
+
+
+
 
 </body>
 
