@@ -1,0 +1,166 @@
+span {
+    font-family: 'Rubik', sans-serif;
+    color: white; 
+    font-weight: 200px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 10px; 
+    display:block;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    padding: 3px; 
+    font-weight: lighter;
+}
+
+.jumbotron{
+    background-color: #5C5A59; 
+    padding: 1px; 
+}
+
+#rectangle{
+    padding: 5px; 
+    width:382px;
+    height:595px;
+    background:black;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: #EB5757;  
+    font-size: 18px; 
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+    color: white;  
+    font-size: 18px; 
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h4{
+    font-family: 'Rubik', sans-serif;
+    color: white;  
+    font-size: 18px; 
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    color: darkgrey;  
+    font-size: 14px; 
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B4B3B3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 160px;
+}
+
+.sidenav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 10px;
+}
+
+.button {
+    font-family: 'Rubik', sans-serif;
+    color: white; 
+    font-size: 50px;
+    background-color: black; 
+    border: 2px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 20px; 
+    margin-right: 20px; 
+
+}
+
+.button2 {
+    font-family: 'Rubik', sans-serif;
+    color: white; 
+    font-size: 50px;
+    background-color: black; 
+    border: 2px;
+    padding-left: 150px;
+    padding-right: 140px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1 {
+    background-color: black; 
+    color: white; 
+    border: 2px solid #FBF2F2;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}
