@@ -1,0 +1,25 @@
+{
+	"recommends": [
+		{
+			"rec": "add stuff here and copy and paste from {} to add more "	
+		},
+        
+        {
+			"rec": "add stuff here "	
+		}
+	]
+}
+
+
+{
+	"warnings": [
+		{
+			"warns": "add stuff here and copy and paste from {} to add more "	
+		},
+        
+        {
+			"warns": "add stuff here "	
+		}
+	]
+}
+
